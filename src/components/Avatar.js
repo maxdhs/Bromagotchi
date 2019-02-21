@@ -1,5 +1,5 @@
 import React from 'react';
-import skinny from '../images/skinny.png';
+import skinny from '../images/skinny.gif';
 import train from '../images/train.gif';
 import fat from '../images/fat.png';
 import strong from '../images/strong.png';
@@ -8,8 +8,7 @@ import eating from '../images/eating.png'
 const Avatar = (props) => {
     if(props.isTraining) {
         return (
-            <div>
-                <h1>Bromagotchi</h1>
+            <div className='train'>
                 <img src={train} />
               </div>
             );
@@ -17,7 +16,6 @@ const Avatar = (props) => {
     if(props.isEating) {
         return (
             <div>
-                <h1>Bromagotchi</h1>
                 <img src={eating} />
               </div>
             );
@@ -25,7 +23,6 @@ const Avatar = (props) => {
     else if(props.muscle < 15 && props.fat < 20) {
         return (
             <div>
-                <h1>Bromagotchi</h1>
                 <img src={skinny} />
               </div>
             );
@@ -33,7 +30,6 @@ const Avatar = (props) => {
     else if(props.fat > 30) {
         return (
             <div>
-                <h1>Bromagotchi</h1>
                 <img src={fat} />
               </div>
             );
@@ -41,7 +37,6 @@ const Avatar = (props) => {
     else if(props.muscle > 20) {
         return (
             <div>
-                <h1>Bromagotchi</h1>
                 <img src={strong} />
               </div>
             );
@@ -49,7 +44,6 @@ const Avatar = (props) => {
     else {
         return (
             <div>
-                <h1>Bromagotchi</h1>
                 <img src={skinny} />
               </div>
             );

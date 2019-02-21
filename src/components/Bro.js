@@ -63,7 +63,8 @@ class Bro extends React.Component {
     render() {
         return (
             <div>
-                <Avatar
+            <div className='bro'>
+            <Avatar
                     energy={this.state.energy}
                     alive={this.state.alive}
                     muscle={this.state.muscle}
@@ -74,7 +75,9 @@ class Bro extends React.Component {
                     isTraining={this.state.isTraining}
                     isEating={this.state.isEating}
                 />
-                <button onClick={this.gym}>Hit the Gym</button>
+            </div>
+              <div className='stats'>
+              <button onClick={this.gym}>Hit the Gym</button>
                 <button onClick={this.eatFood}>Eat Food</button>
                 <button onClick={this.goToWork}>Go to Work</button>
                 <button>Drink Beer</button>
@@ -90,6 +93,7 @@ class Bro extends React.Component {
                     happiness={this.state.happiness}
                     stress={this.state.stress}
                 />
+              </div>
             </div>
         );
     }
