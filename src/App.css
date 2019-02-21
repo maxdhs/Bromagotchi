@@ -1,9 +1,16 @@
+body {
+    font-family: monospace;
+    background-image: url("https://images3.alphacoders.com/677/thumb-1920-677271.png");
+    color: white;
+    background-size: cover; 
+    height: 100vh;
+    width: 100vw;
+}
+
 img {
     width: 200px;
     height: 400px;
-
 }
-
 
 .button {
     display: inline-block;
